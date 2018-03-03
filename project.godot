@@ -11,13 +11,13 @@ config_version=3
 [application]
 
 config/name="Save the Cave!"
-run/main_scene="res://Scene1.tscn"
+run/main_scene="res://Scenes/Scene1.tscn"
 config/icon="res://icon.png"
 
 [autoload]
 
-Constants="*res://Scripts/Constants.gd"
-PixelPerfect="*res://Scripts/PixelPerfect.gd"
+Constants="*res://Assets/Scripts/AutoLoad/Constants.gd"
+PixelPerfect="*res://Assets/Scripts/AutoLoad/PixelPerfect.gd"
 
 [display]
 
