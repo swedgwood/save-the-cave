@@ -16,6 +16,6 @@ func _process(delta):
 		move_local_y(-SPEED)
 	elif difference.y > Constants.game_size.y-PADDING:
 		move_local_y(SPEED)
-	
-	#position = Vector2(ceil(pos.x)-0.5, ceil(pos.y)-0.5)
+
+#	position = Vector2(ceil(pos.x)-0.5, ceil(pos.y)-0.5)
 	get_node("Debug").text = str(position)

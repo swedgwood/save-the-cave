@@ -10,7 +10,7 @@ config_version=3
 
 [application]
 
-config/name="EVENTFALL"
+config/name="Save the Cave!"
 run/main_scene="res://Scene1.tscn"
 config/icon="res://icon.png"
 
