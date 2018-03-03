@@ -7,10 +7,10 @@ path="res://.import/YellowDoor.png-14feee060184b7561ee118918b1df6ec.stex"
 [deps]
 
 source_file="res://Assets/Sprites/Props/YellowDoor.png"
-source_md5="3abc22f3ccca0f801604a953ed0fd1c5"
+source_md5="1432fc2f93fe8d1ae535efefe71b5966"
 
 dest_files=[ "res://.import/YellowDoor.png-14feee060184b7561ee118918b1df6ec.stex" ]
-dest_md5="3b5e2776fd6f8aa526d5a9d529cf9772"
+dest_md5="03bae694b23f6f4f8d5d54459080b40a"
 
 [params]
 

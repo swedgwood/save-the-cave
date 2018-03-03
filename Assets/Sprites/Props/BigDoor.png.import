@@ -7,10 +7,10 @@ path="res://.import/BigDoor.png-3211a0c3d6cd3779bdc4148b6e983b44.stex"
 [deps]
 
 source_file="res://Assets/Sprites/Props/BigDoor.png"
-source_md5="127eb4335a11dc7147a2361f1f0e898e"
+source_md5="1691b7104e55c9fc783ae9f8db5f69a3"
 
 dest_files=[ "res://.import/BigDoor.png-3211a0c3d6cd3779bdc4148b6e983b44.stex" ]
-dest_md5="7bd09ef5398af251404445d10608111c"
+dest_md5="9a3a5320df69b14a73f4c92098f2e5c7"
 
 [params]
 

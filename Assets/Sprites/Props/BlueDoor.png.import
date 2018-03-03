@@ -7,10 +7,10 @@ path="res://.import/BlueDoor.png-5a4ad605068d49bd182b1c42ea24a985.stex"
 [deps]
 
 source_file="res://Assets/Sprites/Props/BlueDoor.png"
-source_md5="4ec52fb9a93b14829809548bbe8515b7"
+source_md5="7612bdf0ff7a3c1e6c6c785c05748e1a"
 
 dest_files=[ "res://.import/BlueDoor.png-5a4ad605068d49bd182b1c42ea24a985.stex" ]
-dest_md5="f6360db00341b93dcb5f98bf48f4e7c6"
+dest_md5="ccc73f848fd8a3e96e49ddac98c5e46f"
 
 [params]
 

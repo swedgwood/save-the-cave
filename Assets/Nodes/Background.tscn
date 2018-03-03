@@ -1,8 +1,8 @@
 [gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://Assets/TileSets/Default.tres" type="TileSet" id=1]
+[ext_resource path="res://Assets/TileSets/Background.tres" type="TileSet" id=1]
 
-[node name="TileMap" type="TileMap" index="0"]
+[node name="Background" type="TileMap" index="0"]
 
 mode = 0
 tile_set = ExtResource( 1 )
@@ -11,7 +11,7 @@ cell_quadrant_size = 16
 cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
 cell_half_offset = 2
 cell_tile_origin = 0
-cell_y_sort = false
+cell_y_sort = true
 cell_clip_uv = false
 collision_use_kinematic = false
 collision_friction = 1.0

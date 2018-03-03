@@ -1,8 +1,8 @@
 extends KinematicBody2D
 
-onready var debug = get_node("/root/Scene1/Camera2D/Debug")
-onready var anim = get_node("/root/Scene1/Anim")
-onready var sprite = get_node("/root/Scene1/Ashley/Sprite")
+onready var debug = get_node("../Camera/Debug")
+onready var anim = get_node("../Anim")
+onready var sprite = get_node("../Ashley/Sprite")
 
 var vel = Vector2(0, 0)
 var step = 50

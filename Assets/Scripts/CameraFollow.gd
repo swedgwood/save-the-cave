@@ -1,6 +1,6 @@
 extends Camera2D
 
-onready var follow = get_node("/root/Scene1/Ashley")
+onready var follow = get_node("../Ashley")
 const PADDING = 64
 const SPEED = 2
 var x = 0
@@ -17,5 +17,4 @@ func _process(delta):
 	elif difference.y > Constants.game_size.y-PADDING:
 		move_local_y(SPEED)
 
-#	position = Vector2(ceil(pos.x)-0.5, ceil(pos.y)-0.5)
-	get_node("Debug").text = str(position)
+	position = Vector2(ceil(position.x)-0.5, ceil(position.y)-0.5)
