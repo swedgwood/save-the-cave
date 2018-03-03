@@ -7,10 +7,10 @@ path="res://.import/GreenDoor.png-ee19ef41d231bdff2af881a557f5f06f.stex"
 [deps]
 
 source_file="res://Assets/Sprites/Props/GreenDoor.png"
-source_md5="8c1387ca9bb27269b21e64fb8796962c"
+source_md5="f5b4d29f662d88f4528ebe46f9d7cc38"
 
 dest_files=[ "res://.import/GreenDoor.png-ee19ef41d231bdff2af881a557f5f06f.stex" ]
-dest_md5="9dcd83467133f0bf24dcd027f6e07052"
+dest_md5="0dcb45c07d413989dcf75c371abda1ac"
 
 [params]
 

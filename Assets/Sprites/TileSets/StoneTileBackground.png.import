@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/RedDoor.png-81ad7127ca98399ecdad5b8dc5646974.stex"
+path="res://.import/StoneTileBackground.png-eea9eaf20e5f58c4c7640e58c80fba84.stex"
 
 [deps]
 
-source_file="res://Assets/Sprites/Props/RedDoor.png"
-source_md5="e8ae413348c64dcd53a3332a91b5755e"
+source_file="res://Assets/Sprites/TileSets/StoneTileBackground.png"
+source_md5="db82c9057d517329e0f43fb4e865134e"
 
-dest_files=[ "res://.import/RedDoor.png-81ad7127ca98399ecdad5b8dc5646974.stex" ]
-dest_md5="40e4cab90f40202fc44a531472e56b1e"
+dest_files=[ "res://.import/StoneTileBackground.png-eea9eaf20e5f58c4c7640e58c80fba84.stex" ]
+dest_md5="7e40ce201bd9eeb939a672cd759a121f"
 
 [params]
 

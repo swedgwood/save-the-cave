@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/RedDoor.png-81ad7127ca98399ecdad5b8dc5646974.stex"
+path="res://.import/ReturnDoor.png-edd511a2620a34753640c76d54b0650b.stex"
 
 [deps]
 
-source_file="res://Assets/Sprites/Props/RedDoor.png"
-source_md5="e8ae413348c64dcd53a3332a91b5755e"
+source_file="res://Assets/Sprites/Props/ReturnDoor.png"
+source_md5="e3acab983f9c0c1492de1bbd65ea54af"
 
-dest_files=[ "res://.import/RedDoor.png-81ad7127ca98399ecdad5b8dc5646974.stex" ]
-dest_md5="40e4cab90f40202fc44a531472e56b1e"
+dest_files=[ "res://.import/ReturnDoor.png-edd511a2620a34753640c76d54b0650b.stex" ]
+dest_md5="5df81e024930d7c1db38aab5fd929bd1"
 
 [params]
 

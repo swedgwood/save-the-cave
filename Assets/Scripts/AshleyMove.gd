@@ -1,8 +1,8 @@
 extends KinematicBody2D
 
-onready var debug = get_node("/root/Scene1/Camera2D/Debug")
-onready var anim = get_node("/root/Scene1/Anim")
-onready var sprite = get_node("/root/Scene1/Ashley/Sprite")
+onready var debug = get_node("../Camera/Debug")
+onready var anim = get_node("AnimationPlayer")
+onready var sprite = get_node("Sprite")
 
 var vel = Vector2(0, 0)
 var step = 50
@@ -14,7 +14,10 @@ const UP = Vector2(0, -1)
 const MAX_SPEED = 5000
 const MAX_MOVE_SPEED = 100
 const MAX_JUMPS = 1
-	
+
+func _ready():
+	position = Globals.player_pos
+
 func _process(delta):
 	if Input.is_action_just_pressed("move_right"):
 		sprite.scale.x = 1
@@ -64,8 +67,10 @@ func _physics_process(delta):
 	vel.y = clamp(vel.y, -MAX_SPEED, MAX_SPEED)
 	move_and_slide(vel, UP)
 	
+	Globals.player_pos = position
+	
 	#debug.text = ""
-	#debug.text += str(Constants.game_size) + "\n"  # game size
+	#debug.text += str(Globals.game_size) + "\n"  # game size
 	#debug.text += str(jumps) # no. of jumps
 	#debug.text += str(vel) + "\n"  # velocity
 	#debug.text += str(get_position()) + "\n"  # position
