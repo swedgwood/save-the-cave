@@ -16,13 +16,13 @@ config/icon="res://icon.png"
 
 [autoload]
 
-Constants="*res://Assets/Scripts/AutoLoad/Constants.gd"
+Globals="*res://Assets/Scripts/AutoLoad/Globals.gd"
 PixelPerfect="*res://Assets/Scripts/AutoLoad/PixelPerfect.gd"
 
 [display]
 
-window/size/width=240
-window/size/height=135
+window/size/width=320
+window/size/height=180
 window/stretch/mode="viewport"
 window/stretch/shrink="1"
 

@@ -1,10 +1,10 @@
 [gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://Assets/Sprites/TileSets/StoneTileBackground.png" type="Texture" id=1]
+[ext_resource path="res://Assets/Sprites/TileSets/StoneBackground.png" type="Texture" id=1]
 
-[node name="StandardTileSet" type="Node"]
+[node name="StandardTileSet" type="Node" index="0"]
 
-[node name="StoneTileBackground" type="Sprite" parent="." index="0"]
+[node name="StoneBackground" type="Sprite" parent="." index="0"]
 
 texture = ExtResource( 1 )
 _sections_unfolded = [ "Transform" ]

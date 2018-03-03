@@ -2,9 +2,8 @@
 
 [ext_resource path="res://Assets/Scripts/CameraFollow.gd" type="Script" id=1]
 
-[node name="Camera" type="Camera2D"]
+[node name="Camera" type="Camera2D" index="0"]
 
-position = Vector2( 120.5, 67.5 )
 anchor_mode = 1
 rotating = false
 current = true
@@ -46,8 +45,6 @@ mouse_filter = 2
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
-text = "debug
-"
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1

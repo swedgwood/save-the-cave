@@ -23,7 +23,7 @@ tile_data = PoolIntArray( -327696, 0, 262146, -327695, 0, 327682, -327694, 0, 32
 
 [node name="ReturnDoor" parent="Props" index="0" instance=ExtResource( 4 )]
 
-position = Vector2( -104, 40 )
+position = Vector2( 104, 40 )
 
 [node name="Ashley" parent="." index="4" instance=ExtResource( 5 )]
 
