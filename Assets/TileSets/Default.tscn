@@ -1,12 +1,6 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://Assets/Sprites/TileSets/Stone.png" type="Texture" id=1]
-
-
-
-
-
-
+[ext_resource path="res://Assets/Sprites/TileSets/StoneTile.png" type="Texture" id=1]
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -15,11 +9,12 @@ extents = Vector2( 8, 8 )
 
 [node name="StandardTileSet" type="Node"]
 
-[node name="Stone" type="Sprite" parent="." index="0"]
+[node name="StoneTile" type="Sprite" parent="." index="0"]
 
 texture = ExtResource( 1 )
+_sections_unfolded = [ "Transform" ]
 
-[node name="StaticBody2D" type="StaticBody2D" parent="Stone" index="0"]
+[node name="StaticBody2D" type="StaticBody2D" parent="StoneTile" index="0"]
 
 input_pickable = false
 collision_layer = 1
@@ -28,8 +23,9 @@ constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
+_sections_unfolded = [ "Transform" ]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Stone/StaticBody2D" index="0"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StoneTile/StaticBody2D" index="0"]
 
 shape = SubResource( 1 )
 
