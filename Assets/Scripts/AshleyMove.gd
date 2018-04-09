@@ -1,6 +1,6 @@
 extends KinematicBody2D
 
-onready var debug = get_node("../Camera/Debug")
+onready var debug = get_node("../Camera2D/Debug")
 onready var anim = get_node("AnimationPlayer")
 onready var sprite = get_node("Sprite")
 
