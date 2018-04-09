@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/BigDoor.png-3211a0c3d6cd3779bdc4148b6e983b44.stex"
+path="res://.import/YellowKey.png-f002e730a497b98c8a5330b1885f6432.stex"
 
 [deps]
 
-source_file="res://Assets/Sprites/Props/BigDoor.png"
-source_md5="cd1c22e8decf49ab9088788ead13a266"
+source_file="res://Assets/Sprites/Props/YellowKey.png"
+source_md5="5f0276019cb7b46c27d5ee2aeeab049a"
 
-dest_files=[ "res://.import/BigDoor.png-3211a0c3d6cd3779bdc4148b6e983b44.stex" ]
-dest_md5="2588036173962da8d57d9c3f2d87fa25"
+dest_files=[ "res://.import/YellowKey.png-f002e730a497b98c8a5330b1885f6432.stex" ]
+dest_md5="7215f0abe448c7735451875ef58e42ff"
 
 [params]
 

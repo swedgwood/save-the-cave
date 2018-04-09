@@ -1,25 +1,31 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=22 format=2]
 
 [ext_resource path="res://Assets/Nodes/Fade.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Assets/Nodes/Background.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Assets/Nodes/TileMap.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Assets/Sprites/Props/BigDoor.png" type="Texture" id=4]
-[ext_resource path="res://Assets/Scripts/Props/RedDoor.gd" type="Script" id=5]
-[ext_resource path="res://Assets/Sprites/Props/RedDoor.png" type="Texture" id=6]
-[ext_resource path="res://Assets/Scripts/Props/BlueDoor.gd" type="Script" id=7]
-[ext_resource path="res://Assets/Sprites/Props/BlueDoor.png" type="Texture" id=8]
-[ext_resource path="res://Assets/Scripts/Props/GreenDoor.gd" type="Script" id=9]
-[ext_resource path="res://Assets/Sprites/Props/GreenDoor.png" type="Texture" id=10]
-[ext_resource path="res://Assets/Scripts/Props/YellowDoor.gd" type="Script" id=11]
-[ext_resource path="res://Assets/Sprites/Props/YellowDoor.png" type="Texture" id=12]
-[ext_resource path="res://Assets/Nodes/Ashley.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Assets/Scripts/Props/BigDoor.gd" type="Script" id=4]
+[ext_resource path="res://Assets/Sprites/Props/BigDoor.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Sprites/Props/RedLock.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Sprites/Props/BlueLock.png" type="Texture" id=7]
+[ext_resource path="res://Assets/Sprites/Props/GreenLock.png" type="Texture" id=8]
+[ext_resource path="res://Assets/Sprites/Props/YellowLock.png" type="Texture" id=9]
+[ext_resource path="res://Assets/Scripts/Props/RedDoor.gd" type="Script" id=10]
+[ext_resource path="res://Assets/Sprites/Props/RedDoor.png" type="Texture" id=11]
+[ext_resource path="res://Assets/Sprites/Props/Lock.png" type="Texture" id=12]
+[ext_resource path="res://Assets/Scripts/Props/BlueDoor.gd" type="Script" id=13]
+[ext_resource path="res://Assets/Sprites/Props/BlueDoor.png" type="Texture" id=14]
+[ext_resource path="res://Assets/Scripts/Props/GreenDoor.gd" type="Script" id=15]
+[ext_resource path="res://Assets/Sprites/Props/GreenDoor.png" type="Texture" id=16]
+[ext_resource path="res://Assets/Scripts/Props/YellowDoor.gd" type="Script" id=17]
+[ext_resource path="res://Assets/Sprites/Props/YellowDoor.png" type="Texture" id=18]
+[ext_resource path="res://Assets/Nodes/Ashley.tscn" type="PackedScene" id=19]
 
-[sub_resource type="RectangleShape2D" id=4]
+[sub_resource type="RectangleShape2D" id=1]
 
 custom_solver_bias = 0.0
 extents = Vector2( 16, 16 )
 
-[sub_resource type="RectangleShape2D" id=5]
+[sub_resource type="RectangleShape2D" id=2]
 
 custom_solver_bias = 0.0
 extents = Vector2( 8, 8 )
@@ -49,6 +55,7 @@ linear_damp = 0.1
 angular_damp = 1.0
 audio_bus_override = false
 audio_bus_name = "Master"
+script = ExtResource( 4 )
 __meta__ = {
 "_edit_group_": true,
 "_edit_lock_": true
@@ -57,13 +64,33 @@ __meta__ = {
 [node name="Sprite" type="Sprite" parent="Props/BigDoor" index="0"]
 
 position = Vector2( 8, -8 )
-texture = ExtResource( 4 )
+texture = ExtResource( 5 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Props/BigDoor" index="1"]
+[node name="RedLock" type="Sprite" parent="Props/BigDoor" index="1"]
+
+position = Vector2( 0, -16 )
+texture = ExtResource( 6 )
+
+[node name="BlueLock" type="Sprite" parent="Props/BigDoor" index="2"]
+
+position = Vector2( 16, -16 )
+texture = ExtResource( 7 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="GreenLock" type="Sprite" parent="Props/BigDoor" index="3"]
+
+texture = ExtResource( 8 )
+
+[node name="YellowLock" type="Sprite" parent="Props/BigDoor" index="4"]
+
+position = Vector2( 16, 0 )
+texture = ExtResource( 9 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Props/BigDoor" index="5"]
 
 position = Vector2( 8, -8 )
-shape = SubResource( 4 )
+shape = SubResource( 1 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="RedDoor" type="Area2D" parent="Props" index="1"]
@@ -76,7 +103,7 @@ linear_damp = 0.1
 angular_damp = 1.0
 audio_bus_override = false
 audio_bus_name = "Master"
-script = ExtResource( 5 )
+script = ExtResource( 10 )
 _sections_unfolded = [ "Transform" ]
 __meta__ = {
 "_edit_group_": true,
@@ -85,11 +112,15 @@ __meta__ = {
 
 [node name="Sprite" type="Sprite" parent="Props/RedDoor" index="0"]
 
-texture = ExtResource( 6 )
+texture = ExtResource( 11 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Props/RedDoor" index="1"]
 
-shape = SubResource( 5 )
+shape = SubResource( 2 )
+
+[node name="Lock" type="Sprite" parent="Props/RedDoor" index="2"]
+
+texture = ExtResource( 12 )
 
 [node name="BlueDoor" type="Area2D" parent="Props" index="2"]
 
@@ -101,7 +132,7 @@ linear_damp = 0.1
 angular_damp = 1.0
 audio_bus_override = false
 audio_bus_name = "Master"
-script = ExtResource( 7 )
+script = ExtResource( 13 )
 __meta__ = {
 "_edit_group_": true,
 "_edit_lock_": true
@@ -109,11 +140,16 @@ __meta__ = {
 
 [node name="Sprite" type="Sprite" parent="Props/BlueDoor" index="0"]
 
-texture = ExtResource( 8 )
+texture = ExtResource( 14 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Props/BlueDoor" index="1"]
 
-shape = SubResource( 5 )
+shape = SubResource( 2 )
+
+[node name="Lock" type="Sprite" parent="Props/BlueDoor" index="2"]
+
+texture = ExtResource( 12 )
+_sections_unfolded = [ "Offset", "Transform" ]
 
 [node name="GreenDoor" type="Area2D" parent="Props" index="3"]
 
@@ -125,7 +161,7 @@ linear_damp = 0.1
 angular_damp = 1.0
 audio_bus_override = false
 audio_bus_name = "Master"
-script = ExtResource( 9 )
+script = ExtResource( 15 )
 __meta__ = {
 "_edit_group_": true,
 "_edit_lock_": true
@@ -133,11 +169,16 @@ __meta__ = {
 
 [node name="Sprite" type="Sprite" parent="Props/GreenDoor" index="0"]
 
-texture = ExtResource( 10 )
+texture = ExtResource( 16 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Props/GreenDoor" index="1"]
 
-shape = SubResource( 5 )
+shape = SubResource( 2 )
+
+[node name="Lock" type="Sprite" parent="Props/GreenDoor" index="2"]
+
+texture = ExtResource( 12 )
+_sections_unfolded = [ "Offset", "Transform" ]
 
 [node name="YellowDoor" type="Area2D" parent="Props" index="4"]
 
@@ -149,7 +190,7 @@ linear_damp = 0.1
 angular_damp = 1.0
 audio_bus_override = false
 audio_bus_name = "Master"
-script = ExtResource( 11 )
+script = ExtResource( 17 )
 __meta__ = {
 "_edit_group_": true,
 "_edit_lock_": true
@@ -157,13 +198,18 @@ __meta__ = {
 
 [node name="Sprite" type="Sprite" parent="Props/YellowDoor" index="0"]
 
-texture = ExtResource( 12 )
+texture = ExtResource( 18 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Props/YellowDoor" index="1"]
 
-shape = SubResource( 5 )
+shape = SubResource( 2 )
 
-[node name="Ashley" parent="." index="4" instance=ExtResource( 13 )]
+[node name="Lock" type="Sprite" parent="Props/YellowDoor" index="2"]
+
+texture = ExtResource( 12 )
+_sections_unfolded = [ "Offset", "Transform" ]
+
+[node name="Ashley" parent="." index="4" instance=ExtResource( 19 )]
 
 position = Vector2( 0, 0 )
 
